@@ -9,7 +9,7 @@ export default class PlantList extends Component {
       plants: []
     }
   }
-  
+
   // when the component mounts:
   //   - fetch data from the server endpoint - http://localhost:3333/plants
   //   - set the returned plants array to this.state.plants
@@ -26,7 +26,6 @@ export default class PlantList extends Component {
 
   /*********  DON'T CHANGE ANYTHING IN THE RENDER FUNCTION *********/
   render() {
-    console.log("####", this.state.plants)
     return (
       <main className="plant-list">
         {this.state?.plants?.map((plant) => (
