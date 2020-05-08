@@ -9,5 +9,5 @@ export const useForm = (key, initalValue) => {
         setValues({ ...values, [e.target.name]: e.target.value });
       };
     
-      return [values, handleChanges, setValues]
+      return [values, handleChanges]
 }
